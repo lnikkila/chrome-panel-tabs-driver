@@ -1,0 +1,12 @@
+{
+  "app_name": {
+    "message": "Panel Tabs (Driver)"
+  },
+  "app_short_name": {
+    "message": "Panel Tabs (Driver)"
+  },
+  "app_description": {
+    "message": "Required app that makes the Panel Tabs extension work.",
+    "description": "The maximum length for this string is 132 characters."
+  }
+}

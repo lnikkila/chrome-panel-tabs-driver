@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  color: #444;
+  font-family: '.SFNSDisplay-Regular', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 14px;
+}
+
+a {
+  color: #4285f4;
+
+  &:hover, &:focus {
+    outline: 0;
+    color: #0044b6;
+  }
+}

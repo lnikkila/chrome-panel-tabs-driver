@@ -1,0 +1,11 @@
+{
+  "eqeqeq": true,
+  "browser": true,
+  "devel": true,
+  "indent": 2,
+  "maxlen": 80,
+  "quotmark": true,
+  "predef": [
+    "chrome"
+  ]
+}

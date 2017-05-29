@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+
+  "name": "__MSG_app_name__",
+  "short_name": "__MSG_app_short_name__",
+
+  "description": "__MSG_app_description__",
+  "version": "2.0.0",
+  "author": "Leo Nikkilä",
+
+  "permissions": [
+    "alwaysOnTopWindows",
+    "browser",
+    "chrome://favicon/",
+    "fullscreen",
+    "webview"
+  ],
+
+  "default_locale": "en",
+
+  "app": {
+    "background": {
+      "scripts": [
+        "scripts/vendor/lodash.js",
+        "scripts/background.js"
+      ],
+      "persistent": false
+    }
+  },
+
+  "icons": {
+    "16":  "/images/icon/icon-16.png",
+    "19":  "/images/icon/icon-19.png",
+    "38":  "/images/icon/icon-38.png",
+    "48":  "/images/icon/icon-48.png",
+    "128": "/images/icon/icon-128.png"
+  }
+}

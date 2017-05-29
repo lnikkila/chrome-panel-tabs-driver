@@ -1,0 +1,105 @@
+$titlebar-height: 3rem;
+
+html, body {
+  height: 100%;
+}
+
+.title-bar {
+  display: flex;
+  height: $titlebar-height;
+  line-height: $titlebar-height;
+  padding: 0 1rem;
+  align-items: center;
+  font-weight: bold;
+  background: #37507a;
+  color: white;
+  -webkit-app-region: drag;
+
+  .icon {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .favicon, .spinner {
+    flex-shrink: 0;
+  }
+
+  .favicon {
+    width: 1rem;
+    height: 1rem;
+    margin: .25rem;
+  }
+
+  .spinner {
+    background-image: url('/images/spinner.png');
+    animation: spinner .5s linear infinite reverse;
+  }
+
+  .title, .controls {
+    flex-basis: auto;
+    white-space: nowrap;
+  }
+
+  .title {
+    flex-grow: 1;
+    padding: 0 1rem;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, white 70%, transparent 100%);
+  }
+
+  .controls {
+    -webkit-app-region: no-drag;
+
+    a {
+      vertical-align: middle;
+      border-radius: .1rem;
+      opacity: .3;
+      cursor: inherit;
+      transition: .1s ease-out all;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:active {
+        background-color: rgba(white, .1);
+      }
+    }
+
+    .close {
+      background-image: url('/images/close.png');
+    }
+
+    .put-back {
+      background-image: url('/images/put_back.png');
+    }
+
+    .collapse {
+      background-image: url('/images/collapse.png');
+    }
+
+    .expand {
+      background-image: url('/images/expand.png');
+    }
+  }
+}
+
+webview {
+  display: block;
+  width: auto;
+  height: calc(100% - #{$titlebar-height});
+}
+
+@-webkit-keyframes spinner {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}

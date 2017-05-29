@@ -1,0 +1,7 @@
+{
+  "name": "chrome-panel-tabs-driver",
+  "private": true,
+  "devDependencies": {
+    "lodash": "~3.3.1"
+  }
+}
